@@ -96,4 +96,4 @@
 | 認証       | sorcery                 |
 
 ## 画面遷移図 ##
-https://www.figma.com/design/bJjRqUxVkxfU9gNAMGaWp0/Web%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA(%E5%B1%B1%E5%86%85)?node-id=13-69&m=dev&t=mhLBOkFQ2TYcXTc2-1
+https://www.figma.com/design/bJjRqUxVkxfU9gNAMGaWp0/Web%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA(%E5%B1%B1%E5%86%85)?node-id=13-69&t=8XeYgWVKZ9na0aP0-1
