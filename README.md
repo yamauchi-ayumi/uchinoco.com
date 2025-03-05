@@ -97,3 +97,6 @@
 
 ## 画面遷移図 ##
 https://www.figma.com/design/bJjRqUxVkxfU9gNAMGaWp0/Web%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA(%E5%B1%B1%E5%86%85)?node-id=13-69&t=8XeYgWVKZ9na0aP0-1
+
+## ER図
+<iframe width="560" height="315" src='https://dbdiagram.io/e/67c40167263d6cf9a0ec7db4/67c7a53d263d6cf9a03c5bee'> </iframe>
