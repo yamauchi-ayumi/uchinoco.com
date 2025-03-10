@@ -11,16 +11,13 @@
 		      <nav aria-label="Global">
 				    <ul class="flex items-center gap-6 text-sm">
 					    <li>
-				        <%= link_to "ホーム", root_path, class: "text-white transition hover:text-gray-500/75" %>
+				        <%= link_to t('header.root'), root_path, class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 				      <li>
-							  <%= link_to "投稿一覧", "#", class: "text-white transition hover:text-gray-500/75" %>
-				      </li>
-              <li>
-							  <%= link_to "投稿する", login_path, class: "text-white transition hover:text-gray-500/75" %>
+							  <%= link_to t('header.board_index'), "#", class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 				      <li>
-				        <%= link_to "ログイン", login_path, class: "text-white transition hover:text-gray-500/75" %>
+				        <%= link_to t('header.login'), login_path, class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 					   </ul>
 					 </nav>
