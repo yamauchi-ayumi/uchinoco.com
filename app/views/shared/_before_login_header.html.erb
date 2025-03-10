@@ -10,17 +10,17 @@
 		    <div class="hidden md:flex md:items-center md:gap-12 ml-auto">
 		      <nav aria-label="Global">
 				    <ul class="flex items-center gap-6 text-sm">
-				      <li>
-								<%= link_to "投稿一覧", "#", class: "text-white transition hover:text-gray-500/75" %>
-				      </li>
-							<li>
-								<%= link_to "投稿する", "#", class: "text-white transition hover:text-gray-500/75" %>
-				      </li>
-							<li>
-								<%= link_to "マイページ", "#", class: "text-white transition hover:text-gray-500/75" %>
+					    <li>
+				        <%= link_to "ホーム", root_path, class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 				      <li>
-				        <%= link_to "ログアウト", 'logout', class: "text-white transition hover:text-gray-500/75", data: { turbo_method: :delete } %>
+							  <%= link_to "投稿一覧", "#", class: "text-white transition hover:text-gray-500/75" %>
+				      </li>
+              <li>
+							  <%= link_to "投稿する", login_path, class: "text-white transition hover:text-gray-500/75" %>
+				      </li>
+				      <li>
+				        <%= link_to "ログイン", login_path, class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 					   </ul>
 					 </nav>
