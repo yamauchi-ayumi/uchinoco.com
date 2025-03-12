@@ -1,0 +1,5 @@
+<% flash.each do |message_type, message| %>
+  <div class="<%= flash_background_color(message_type) %> <%= flash_text_color(message_type) %> <%= flash_border_color(message_type) %> px-5 py-4 rounded relative text-sm" role="alert" >
+    <%= message %>
+  </div>
+<% end %>
