@@ -1,0 +1,32 @@
+<div class="mx-auto pt-10">
+    <!-- 検索フォーム -->
+  <div class="flex justify-center">
+    <form class="max-w-md w-full">   
+      <div class="relative">
+        <input type="search" id="default-search" 
+        class="block w-full p-3 ps-4 text-sm text-gray-900 border border-black rounded-full bg-white dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" 
+        placeholder="キーワード, タグ, 動物の種類…" required />
+        <button type="submit" 
+        class="absolute end-2.5 bottom-1.5 font-medium text-sm p-2 text-black dark:text-white">
+          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path stroke="black" stroke-width="1.5" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+    <!-- 投稿一覧 -->
+    <div class="mx-auto max-w-screen-xl py-20">
+      <div class="w-full max-w-1xl">
+        <% if @posts.present? %>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            <%= render @posts %>
+          </div>
+        <% else %>
+          <div class="flex justify-center h-32 text-center text-gray-500">
+            投稿がありません
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>

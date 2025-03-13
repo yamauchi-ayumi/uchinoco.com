@@ -1,5 +1,5 @@
 <header class="bg-emerald-700">
-  <div class="mx-auto max-w-screen-xl px-6">
+  <div class="mx-auto max-w-screen-2xl px-6">
     <div class="flex h-16 items-center justify-between">
 	    <div class="flex-1 md:flex">
 		    <div class="block text-white">
@@ -11,7 +11,7 @@
 		      <nav aria-label="Global">
 				    <ul class="flex items-center gap-6 text-sm">
 				      <li>
-								<%= link_to t('header.board_index'), "#", class: "text-white transition hover:text-gray-500/75" %>
+								<%= link_to t('header.board_index'), posts_path, class: "text-white transition hover:text-gray-500/75" %>
 				      </li>
 							<li>
 								<%= link_to t('header.create_board'), "#", class: "text-white transition hover:text-gray-500/75" %>
