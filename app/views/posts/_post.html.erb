@@ -1,0 +1,18 @@
+<div class="flex justify-center">
+  <div id="post-id-<%= post.id %>">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <%= link_to post_path(post) do %>
+        <%= image_tag "post_placeholder.png", class: "w-full h-60 object-cover rounded-t-lg" %>
+      <% end %>
+      <div class="p-5">
+        <div class="relative flex items-center space-x-3">
+          <% link_to "user_path(post.user)", class: "flex items-center space-x-3" do %>
+            <image_tag "image.png" class="w-10 h-10 rounded-full" alt="Rounded avatar">
+            <div class="text-sm font-medium"><%= post.user.name %></div>
+          <% end %>
+        </div>
+        <div class="mt-2 text-sm"><%= post.body %></div>
+      </div>
+    </div>
+  </div>
+</div>
