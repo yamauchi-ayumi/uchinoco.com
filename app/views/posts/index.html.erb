@@ -16,10 +16,10 @@
     </form>
   </div>
     <!-- 投稿一覧 -->
-    <div class="my-20 flex justify-center">
-      <div class="w-full max-w-3xl">
+    <div class="mx-auto max-w-screen-xl py-20">
+      <div class="w-full max-w-1xl">
         <% if @posts.present? %>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
             <%= render @posts %>
           </div>
         <% else %>
