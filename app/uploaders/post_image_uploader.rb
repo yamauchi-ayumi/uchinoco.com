@@ -28,10 +28,10 @@ class PostImageUploader < CarrierWave::Uploader::Base
   # def scale(width, height)
   #   # do something
   # end
-  # process resize_to_fit: [300, 300]
+  process resize_to_fill: [400, 400]
   # Create different versions of your uploaded files:
   version :thumb do
-    process resize_to_fill: [240, 240]
+    process resize_to_fill: [400, 400]
   end
 
   # Add an allowlist of extensions which are allowed to be uploaded.
@@ -46,7 +46,7 @@ class PostImageUploader < CarrierWave::Uploader::Base
   #   "something.jpg"
   # end
   # process convert: 'jpg'
-  process resize_to_fit: [300, 300]
+  # process resize_to_fit: [300, 300]
   # 画像を正方形にトリミングする
   # process :resize_and_crop
 

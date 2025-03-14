@@ -4,6 +4,7 @@
   </div>
   <div class="mx-auto mt-8 mb-0 max-w-md space-y-4">
     <%= form_with model: @user do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
       <div class="mb-3">
         <%= f.label :name %>
         <%= f.text_field :name, class: "w-full rounded-lg border border-gray-300 p-4 text-sm shadow-sm focus:border-black focus:ring-black" %>
@@ -26,7 +27,7 @@
         </button>
       </div>
     <% end %>
-      <div class="text-center mt-[30px]">
+      <div class="text-center mt-[30px] hover:text-gray-500">
         <%= link_to t('.to_login_page'), login_path %>
       </div>
   </div>
