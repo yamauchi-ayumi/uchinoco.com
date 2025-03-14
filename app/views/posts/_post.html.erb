@@ -2,7 +2,7 @@
   <div id="post-id-<%= post.id %>">
     <div class="max-w-md w-full mb-3 p-2 bg-white border border-black rounded-xl dark:bg-gray-800 dark:border-gray-700">
       <%= link_to "#" do %>
-        <%= image_tag "post_placeholder.png", class: "w-full h-60 object-cover rounded-lg" %>
+        <%= image_tag post.post_image_url, class: "w-full h-60 object-cover rounded-lg" %>
       <% end %>
       <div class="pt-5">
         <div class="relative">
