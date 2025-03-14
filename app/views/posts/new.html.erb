@@ -5,10 +5,9 @@
   <div class="mx-auto mt-8 mb-0 max-w-md space-y-4">
     <%= form_with model: @post, local: true do |f| %>
       <div class="mb-2">
-        <%= f.fields_for :photos do |photos_field| %>
-          <%= photos_field.label :image, t('.image')  %>
-          <%= photos_field.file_field :image, multiple: true, accept: "image/*", class: "p-2 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" %>
-        <% end %>
+          <%= f.label :post_image, t('.image')  %>
+          <%= f.file_field :post_image, accept: "image/*", class: "p-2 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" %>
+          <%= f.hidden_field :post_image_cache %>
       </div>
       <div>
         <%= f.label :body, t('.body') %>
