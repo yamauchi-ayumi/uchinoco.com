@@ -3,21 +3,6 @@
     <h1> <%= t('.title') %></h>
   </div>
   <div class="mx-auto mt-8 mb-0 max-w-md space-y-4">
-    <%= form_with model: @post, local: true do |f| %>
-      <div class="mb-2">
-          <%= f.label :post_image, t('.image')  %>
-          <%= f.file_field :post_image, accept: "image/*", class: "p-2 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" %>
-          <%= f.hidden_field :post_image_cache %>
-      </div>
-      <div>
-        <%= f.label :body, t('.body') %>
-        <%= f.text_area :body, class: "w-full rounded-lg border border-gray-300 p-4 text-sm shadow-sm focus:border-black focus:ring-black" %>
-      </div>
-      <div class="mt-sm flex flex-col items-center justify-right" >
-        <button class="inline-block rounded-full border border-black bg-yellow-300 px-3 py-1 text-sm font-medium text-black hover:bg-black hover:text-white">
-          <%= f.submit "投稿", class: "btn btn-primary" %>
-        </button>
-      </div>
-    <% end %>
+    <%= render 'form', post: @post %>
   </div>
 </div>
