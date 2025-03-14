@@ -37,6 +37,9 @@ gem "bootsnap", require: false
 
 gem "sorcery"
 gem "rails-i18n"
+gem "carrierwave", "~> 3.0"
+gem "mini_magick"
+gem "byebug"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

@@ -12,6 +12,8 @@ ja:
   defaults:
     flash_message:
       require_login: ログインしてください
+      created: 写真を投稿できました
+      not_created: 写真を投稿できませんでした
   user_sessions:
     new:
       title: ログイン
@@ -30,6 +32,11 @@ ja:
     create:
       success: アカウント登録が完了しました
       failure: アカウント登録に失敗しました
+  posts:
+    new:
+      title: 新規投稿
+      body: コメント
+      image: 写真
   header:
     root: ホーム
     login: ログイン
