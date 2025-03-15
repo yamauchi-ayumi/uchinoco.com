@@ -7,7 +7,7 @@
 		        <h1 class="text-xl md:text-xl font-bold tracking-wider">uchinoco.com</h1>
 		      <% end %>
 		    </div>
-		    <div class="hidden md:flex md:items-center md:gap-12 ml-auto">
+		    <div class="md:flex md:items-center md:gap-12 ml-auto">
 		      <nav aria-label="Global">
 				    <ul class="flex items-center gap-6 text-sm">
 				      <li>
@@ -20,12 +20,13 @@
 								<p class="text-white transition hover:text-gray-500/75">マイページ</p>
 				      </li>
 				      <li>
-				        <%= link_to t('header.logout'), logout_path, method: :delete, data: { turbo_method: :delete }, class: "text-white transition hover:text-gray-500/75" %>
+				        <%= link_to t('header.logout'), logout_path, class: "text-white transition hover:text-gray-500/75", data: { turbo_method: :delete } %>
 				      </li>
 					   </ul>
 					 </nav>
 				</div>
 	    </div>
+			<!-- ハンバーガーメニュー
       <div class="block md:hidden ml-auto">
         <button id="hamburgerButton" class="rounded-md bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
           <svg
@@ -40,12 +41,22 @@
           </svg>
         </button>
 				<ul id="dropdownMenu" class="absolute right-16 top-3 px-4 py-2 bg-gray-200 rounded-md flex flex-col items-center text-sm hidden">
-					<li class="px-4 py-2 hover:bg-gray-100"><%= link_to t('header.board_index'), posts_path %></li>
-					<li class="px-4 py-2 hover:bg-gray-100"><%= link_to t('header.create_board'), new_post_path %></li>
-					<li class="px-4 py-2 hover:bg-gray-100"><p>マイページ</p></li>
-					<li class="px-4 py-2 hover:bg-gray-100"><%= link_to t('header.logout'), logout_path, method: :delete, data: { turbo_method: :delete } %></li>
+					<li>
+						<%= link_to t('header.board_index'), posts_path, class: "block hover:bg-gray-100 px-4 py-2" %>
+					</li>
+					<li>
+					<%= link_to t('header.create_board'), new_post_path, class: "block hover:bg-gray-100 px-4 py-2" %>
+					</li>
+					</li>
+					<li class="block hover:bg-gray-100">
+						<p class="block hover:bg-gray-100 px-4 py-2">マイページ</p>
+					</li>
+					<li>
+					<%= link_to t('header.logout'), logout_path, method: :delete, class: "block hover:bg-gray-100 px-4 py-2" %>
+					</li>
 				</ul>
       </div>
+			-->
     </div>
   </div>
 </header>
