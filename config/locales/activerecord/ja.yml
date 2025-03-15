@@ -16,7 +16,7 @@ ja:
     messages:
       blank: を入力してください
       invalid: が無効です
-      taken: すでに存在します
+      taken: はすでに存在します
       too_short: "は%{count}文字以上で入力してください"
-      too_long: "は%{count}文字以下で入力してください"
+      too_long: "は%{count}文字以内で入力してください"
       extension_allowlist_error: "はJPEG、GIF、PNG、PNGのいずれかのファイルのみ選択可能です"
