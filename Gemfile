@@ -72,4 +72,8 @@ group :test do
   gem "webdrivers"
 end
 
+group :production do
+  gem 'fog-aws'
+end
+
 gem "tailwindcss-rails", "~> 4.2"
