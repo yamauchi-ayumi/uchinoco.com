@@ -3,7 +3,6 @@ class PostImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
   # include CarrierWave::Vips
-  storage CarrierWave.config.storage
   # Choose what kind of storage to use for this uploader:
   if Rails.env.production?
     storage :fog
