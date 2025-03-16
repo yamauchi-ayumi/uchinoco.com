@@ -9,6 +9,7 @@ CarrierWave.configure do |config|
     }
     config.fog_directory  = ENV['S3_BUCKET']
     config.storage        = :fog
+    config.fog_attributes = { 'x-amz-acl' => nil }
   else
     config.storage = :file
   end
